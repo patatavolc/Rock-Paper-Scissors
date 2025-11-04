@@ -1,0 +1,27 @@
+{
+  "name": "rock-paper-scissors",
+  "version": "1.0.0",
+  "description": "El juego clasico de Pidra Papel o Tijeras",
+  "homepage": "https://github.com/patatavolc/Rock-Paper-Scissors#readme",
+  "bugs": {
+    "url": "https://github.com/patatavolc/Rock-Paper-Scissors/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patatavolc/Rock-Paper-Scissors.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

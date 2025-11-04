@@ -14,11 +14,11 @@
     <section id="score-zone">
       <div class="score-card">
         <p>Player score</p>
-        <div class="score-number">0</div>
+        <div class="score-number player-score">0</div>
       </div>
       <div class="score-card">
         <p>Machine score</p>
-        <div class="score-number">0</div>
+        <div class="score-number machine-score">0</div>
       </div>
     </section>
 
@@ -67,7 +67,7 @@
     </section>
 
     <section id="options-zone">
-      <button class="option-button">
+      <button class="option-button" id="piedra">
         <span class="material-symbols-outlined">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -80,7 +80,7 @@
         </span>
         Piedra
       </button>
-      <button class="option-button">
+      <button class="option-button" id="papel">
         <span class="material-symbols-outlined">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
             class="icon icon-tabler icons-tabler-filled icon-tabler-file-code">
@@ -92,7 +92,7 @@
         </span>
         Papel
       </button>
-      <button class="option-button">
+      <button class="option-button" id="tijera">
         <span class="material-symbols-outlined">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -110,9 +110,10 @@
   </main>
 
   <footer>
-    <button class="footer-button play">Jugar de nuevo</button>
     <button class="footer-button reset">Reiniciar</button>
   </footer>
+
+  <script type="module" src="../scripts/main.js"></script>
 </body>
 
 </html>

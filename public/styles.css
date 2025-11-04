@@ -1,0 +1,174 @@
+/* Variables globales */
+:root {
+  --primary: #258cf4;
+  --background: #101922;
+  --font-display: "Spline Sans", sans-serif;
+  --text-light: #ffffff;
+  --text-muted: #94a3b8;
+  --border-color: #1e293b;
+  --surface: rgba(15, 23, 42, 0.5)
+}
+
+body {
+  font-family: var(--font-display);
+  background-color: var(--background);
+  color: var(--text-light);
+  margin: 0;
+  padding: 2rem;
+}
+
+/* Titulos */
+h1 {
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0.5rem 0 0;
+}
+
+/* Zona de puntos */
+#score-zone {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.score-card {
+  background-color: var(--surface);
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  min-width: 160px;
+  text-align: center;
+
+  p {
+    color: var(--text-muted);
+    font-weight: 500;
+    margin: 0;
+  }
+}
+
+.score-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-light);
+  margin-top: 0.5rem;
+}
+
+/* Jugadores */
+#players-zone {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.player-info {
+  text-align: center;
+}
+
+.player-image {
+  width: 200px;
+  height: 200px;
+  background-color: var(--surface);
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-size: 5rem;
+  color: #475569;
+
+}
+
+.player-image svg{
+  width: 6rem;
+  height: 6rem;
+  color: #475569;
+}
+
+/* Opciones */
+#options-zone {
+  display: flex;
+  justify-content: ce nter;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.option-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+
+  background-color: #0f172a;
+  border: 1px solid var(--border-color);
+  color: var(--text-light);
+  font-weight: 700;
+
+  padding: 0 1.5rem;
+  height: 3.5rem;
+  border-radius: 99999px;
+
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+
+  &:hover {
+    background-color: #1e293b;
+  }
+
+  svg {
+    height: 1.5rem;
+    width: 1.rem;
+    display: block;
+  }
+
+}
+
+
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 1.5rem;
+}
+
+.footer-button.play {
+  background-color: var(--primary);
+  color: #fff;
+  opacity: 0.5;
+  border: 1px solid var(--border-color);
+  pointer-events: none;
+
+  padding: 0 1.5rem;
+  height: 3.5rem;
+  border-radius: 99999px;
+}
+
+.footer-button.reset {
+  background-color: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--border-color);
+  padding: 0 1.5rem;
+  height: 3.5rem;
+  border-radius: 99999px;
+}
+
+.footer-button.reset:hover {
+  background-color: rgba(30, 41, 59, 0.5);
+}

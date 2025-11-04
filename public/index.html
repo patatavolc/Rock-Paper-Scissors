@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piedra, papel y tijera</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>Bienvenido al juego de Piedra, Papel o Tijera</h1>
+  <main>
+    <section id="score-zone">
+      <div class="score-card">
+        <p>Player score</p>
+        <div class="score-number">0</div>
+      </div>
+      <div class="score-card">
+        <p>Machine score</p>
+        <div class="score-number">0</div>
+      </div>
+    </section>
+
+    <section id="players-zone">
+      <!-- Parte del jugador -->
+      <div class="player-info">
+        <div class="player-image">
+          <span class="material-symbols-outlined">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-user-circle">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+              <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+              <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
+            </svg>
+          </span>
+        </div>
+        <h2>Tú</h2>
+        <small>Elige una opción</small>
+      </div>
+
+      <!-- Parte de la maquina -->
+      <div class="player-info">
+        <div class="player-image">
+          <span class="material-symbols-outlined">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-robot">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M6 4m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z" />
+              <path d="M12 2v2" />
+              <path d="M9 12v9" />
+              <path d="M15 12v9" />
+              <path d="M5 16l4 -2" />
+              <path d="M15 14l4 2" />
+              <path d="M9 18h6" />
+              <path d="M10 8v.01" />
+              <path d="M14 8v.01" />
+            </svg>
+          </span>
+        </div>
+        <h2>Máquina</h2>
+        <small>Pensando...</small>
+      </div>
+    </section>
+
+    <section id="options-zone">
+      <button class="option-button">
+        <span class="material-symbols-outlined">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-rocket">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3" />
+            <path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3" />
+            <path d="M15 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+          </svg>
+        </span>
+        Piedra
+      </button>
+      <button class="option-button">
+        <span class="material-symbols-outlined">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+            class="icon icon-tabler icons-tabler-filled icon-tabler-file-code">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M12 2l.117 .007a1 1 0 0 1 .876 .876l.007 .117v4l.005 .15a2 2 0 0 0 1.838 1.844l.157 .006h4l.117 .007a1 1 0 0 1 .876 .876l.007 .117v9a3 3 0 0 1 -2.824 2.995l-.176 .005h-10a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-14a3 3 0 0 1 2.824 -2.995l.176 -.005zm-1.553 11.106a1 1 0 0 0 -1.341 .447l-1 2a1 1 0 0 0 0 .894l1 2a1 1 0 0 0 1.341 .447l.102 -.058a1 1 0 0 0 .345 -1.283l-.776 -1.553l.776 -1.553a1 1 0 0 0 -.447 -1.341m4.447 .447a1 1 0 0 0 -1.341 -.447l-.102 .058a1 1 0 0 0 -.345 1.283l.774 1.553l-.775 1.553a1 1 0 0 0 1.788 .894l1 -2a1 1 0 0 0 0 -.894z" />
+            <path d="M19 7h-4l-.001 -4.001z" />
+          </svg>
+        </span>
+        Papel
+      </button>
+      <button class="option-button">
+        <span class="material-symbols-outlined">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-scissors">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M6 7m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+            <path d="M6 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+            <path d="M8.6 8.6l10.4 10.4" />
+            <path d="M8.6 15.4l10.4 -10.4" />
+          </svg>
+        </span>
+        Tijera
+      </button>
+    </section>
+  </main>
+
+  <footer>
+    <button class="footer-button play">Jugar de nuevo</button>
+    <button class="footer-button reset">Reiniciar</button>
+  </footer>
+</body>
+
+</html>
